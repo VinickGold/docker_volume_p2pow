@@ -1,0 +1,14 @@
+{
+  "name": "p2pow",
+  "version": "1.0.0",
+  "description": "Exemplo de dockerização para ajudar o Kaique com o p2pow S2",
+  "author": "Vinicius Goldenberg",
+  "license": "ISC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}

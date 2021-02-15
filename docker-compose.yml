@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  p2pow:
+    build:
+      #indica que vai usar o dockerfile no diretório atual para buildar a imagem
+      context: .
+    container_name: p2pow
+    restart: always
+    #mapeia a porta que o programa está rodando dentro do container para a porta 9999 da nossa maquina
+    ports:
+      - 9999:8080
+    #expoe o vulume do diretório criado no p2pow para um diretório na nossa máquina
+    volumes:
+      - ./p2p_volume:/usr/src/p2p_volume
